@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'style.css' %}">
+<body bgcolor="#FFE5B5">	
+	
+<title>吉祥物</title>
+
+</head>
+<body>
+<header>
+<div id="div1" style="width:100%;height:35px;background-color:SandyBrown ">
+<h2 id="h21">吉祥物-01</h2>
+</div>
+</header>
+
+<h3 id="h31">動作自訂</h3>
+<form method="POST" action="/TP/">{% csrf_token %}
+<dd id= "dd1">速度: <select name="sp1" id="sp1">
+　<option value="1">1</option>
+　<option value="2">2</option>
+　<option value="3">3</option>
+</select> 級 ，角度 : 
+		 <select name="ang1" id="ang1">
+　<option value="30">30</option>
+　<option value="60">60</option>
+　<option value="90">90</option>
+</select>度 ， 距離
+         <select name="dis1" id="dis1" >
+　<option value="1">1</option>
+　<option value="2">2</option>
+　<option value="3">3</option>
+  <option value="4">4</option>
+　<option value="5">5</option>
+</select>公分時</dd>
+<dd id="dd2">速度: <select name="sp2"  id="sp2">
+　<option value="1">1</option>
+　<option value="2">2</option>
+　<option value="3">3</option>
+
+</select> 級 ，角度 : 
+		 <select name="ang2"  id="ang2">
+　<option value="30">30</option>
+　<option value="60">60</option>
+　<option value="90">90</option>
+</select>度 ， 距離
+         <select name="dis2" id="dis2">
+　<option value="10">10</option>
+　<option value="13">13</option>
+　<option value="15">15</option>
+  <option value="17">17</option>
+　<option value="20">20</option>
+</select>公分時</dd>
+<dd id="dd3">速度: <select name="sp3" id="sp3">
+　<option value="1">1</option>
+　<option value="2">2</option>
+　<option value="3">3</option>
+
+</select> 級 ，角度 : 
+		 <select name="ang3" id="ang3">
+　<option value="30">30</option>
+　<option value="60">60</option>
+　<option value="90">90</option>
+</select>度 ， 距離
+         <select name="dis3" id="dis3">
+　<option value="30">30</option>
+　<option value="33">33</option>
+　<option value="35">35</option>
+  <option value="37">37</option>
+　<option value="40">40</option>
+</select>公分時</dd>                  
+
+
+</span><div style="position:absolute;right:5px"><input type="submit" value="動作儲存" id="intput1"></div>
+<div style="position:relative;top:28px"><hr/></div>
+</form>
+
+
+<div style="position:relative;top:20px"><h3 id="h32">動作辨識</h3></div>
+<form method="POST" action="/finger/">{% csrf_token %}
+<div style="position:relative;top:10px"><dd id="dd4">使用影像辨識更改音樂</dd></div>
+<div style="position:relative;top:0px">
+
+<span id="span1" style="position:absolute;right:100px"><input id="input2" type="submit" value="換歌"></span>
+<span style="position:absolute;right:15px"><input id="input3" type ="button" onclick="history.back()" value="結束"></span>
+</div>
+</form>
+
+
+<div id="div1" style="position:absolute;right:10px;top:395px">finger :{{data}} <
+</div>
+
+{% load static %}
+<div style="position:absolute;left:0px;bottom: 0;">
+<img id="img" src="{% static "image/pic.png" %}" width="408" height="224">
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>吉祥物</title>
+
+</head>
+<body>
+<header>
+<div style="width:100%;height:35px;background-color:gray">
+<h2>吉祥物-01<span style="position:absolute;right:10px;top:25px"><input type="submit" value="登入"></span></h2>
+</div>
+</header>
+<hr/>
+<h3>動作自訂</h3>
+<form method="POST" action="upload.php">
+<dd>耳朵擺動 : <input type= "text" name = "num1" size = "10"> 秒 ，</dd>
+<dd>左手擺動 : <input type= "text" name = "num2" size = "10"> 秒 ，</dd>
+<dd>右手擺動 : <input type= "text" name = "num3" size = "10"> 秒 ，</dd>
+<dd>嘴部開口 : <input type= "text" name = "num4" size = "10"> 秒 ，</dd>
+</span><span style="position:absolute;right:5px"><input type="submit" value="動作儲存"></span> 
+   
+</form>
+<dl>
+<dd>BGM設定 : 
+  <select name = "BGM">
+  <option value="" selected>請選擇音樂
+  </select>
+<span style="position:relative;left:10px"><input type="submit" value="試聽">
+</dd>
+<br/>
+<hr/>
+<dd>動作設定 : 
+  <select name = "BGM">
+  <option value="" selected>請選擇動作
+  </select><span style="position:absolute;right:5px"><input type="submit" value="儲存"></span>
+</dl>
+
+<hr/>
+<p><img src="img/pic.png" width="294" height="156"></p>
+
+<span style = "border:1px solid black;position:absolute;left:305px;top:395px">鏡頭<br/>畫面</span>
+<div style="position:absolute;right:10px;top:395px">現在溫度 : 度<br/>
+目前人流 : 人
+</div>
+<div style="position:absolute;right:0px;top:20px">
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+#h21{color:black;}
+
+	
+@media (max-width:1080px){
+	#div1 {height:100px;}
+	#h21 {font-size:1.5cm; color:black;}
+	#h31 {font-size:1cm;}
+	#dd1{font-size:0.8cm;}
+	#dd2{font-size:0.8cm;}
+	#dd3{font-size:0.8cm;}
+	#sp1{width:120px;height:35px;font-size:0.8cm;}
+	#ang1{width:120px;height:35px;font-size:0.8cm;}
+	#dis1{width:120px;height:35px;font-size:0.8cm;}
+	#sp2{width:120px;height:35px;font-size:0.8cm;}
+	#ang2{width:120px;height:35px;font-size:0.8cm;}
+	#dis2{width:120px;height:35px;font-size:0.8cm;}
+	#sp3{width:120px;height:35px;font-size:0.8cm;}
+	#ang3{width:120px;height:35px;font-size:0.8cm;}
+	#dis3{width:120px;height:35px;font-size:0.8cm;}
+	#intput1{font-size:0.8cm;}
+	#h31{font-size:1cm;}
+	#dd4{font-size:0.8cm;}
+	#span1{right:250px;}
+	#input2{font-size:0.8cm;}
+	#input3{font-size:0.8cm;}
+	#div1{bottom:0;}
+	#img{width : 612 height : 276}
+	}
+
+
